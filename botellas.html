@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sublimables Sol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar position-relative">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <img src="img/logo.jpg" id="logo" alt="logo" class="m-1">
+        <button class="buttoN" onclick="window.location.href='index.html'">Sublimables Sol</button>
+        <div class="dropdowns">
+          <div class="dropDown">
+            <button onclick="window.location.href='galeria.html'" class="buttoN">
+              Productos
+              <img src="img/chevron.svg"/>
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='tazas.html'">Tazas</button>
+              <button onclick="window.location.href='botellas.html'">Botellas</button>
+              <button onclick="window.location.href='carnets.html'">Carnets</button>
+              <button onclick="window.location.href='camisetas.html'">Camisetas</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button class="buttoN" onclick="window.location.href='historia.html'">
+              Historia
+              <img src="img/chevron.svg" />
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='nosotros.html'">¿Quienes somos?</button>
+              <button onclick="window.location.href='ubicacion.html'">Ubicacion</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button onclick="window.location.href='acerca.html'" class="buttoN">
+              Acerca
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <h3 class="text-center mt-5 mb-4 w-50 container">Botellas</h3>
+        <p class="text-center">Ofrecemos dos tipos de botellas. 
+          <br>Botellas blancas: tienen un precio de 1500 colones.
+          <br>Botellas grises: tienen un precio de 1750 colones.
+        </p>
+        <div class="col-md-9 col-9 mt-3 container mb-4">
+          <div class="rounded overflow-hidden">
+            <div class="row">
+              <div class="fadeIn col-md-6 m-0 p-0">
+                
+                <div class="text-center py-5 px-4" id="divBlue">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (1).jpg" alt="" />
+                  <h1 class="display-6">
+                    Botella
+                    <br>Alajuelense
+                  </h1>
+                </div>
+              </div>
+    
+              <div class="fadeIn col-md-6 m-0 p-0">
+                <div class="text-center py-5 px-4" id="divWhite">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (2).jpg" alt="" />
+                    <h1 class="display-6">
+                      Botella
+                      <br>Con Mensaje
+                    </h1>
+                </div>
+              </div>
+    
+              <div class="fadeIn col-md-6 m-0 p-0">
+                <div class="text-center py-5 px-4" id="divWhite">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (3).jpg" alt="" />
+                  <h1 class="display-6">
+                    Botella<br>Unicornio
+                  </h1>
+                </div>
+              </div>
+
+              <div class="fadeIn col-md-6 m-0 p-0">
+                <div class="text-center py-5 px-4" id="divBlue">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (4).jpg" alt="" />
+                  <h1 class="display-6">Botellas<br>Niños</h1>
+                </div>
+              </div>
+
+              <div class="fadeIn col-md-6 m-0 p-0">
+                
+                <div class="text-center py-5 px-4" id="divBlue">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (5).png" alt="" />
+                  <h1 class="display-6">
+                    Botella
+                    <br>Romantica
+                  </h1>
+                </div>
+              </div>
+    
+              <div class="fadeIn col-md-6 m-0 p-0">
+                <div class="text-center py-5 px-4" id="divWhite">
+                  <img class="img-fluid mb-4" src="img/botellas/bot (6).png" alt="" />
+                    <h1 class="display-6">
+                      Botella
+                      <br>Futbol
+                    </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- #Form ------------------------------------------------------------------------------------------------------------------------------------------------------------>
+                <div class="container p-2 mb-3 col-10 shadow bg-white" id="form">
+                  <label class="form-label">Nombre Completo:</label>
+                  <input type="text" class="input-group-text col-12" id="name">
+        
+                  <label class="form-label">Asunto:</label>
+                  <input type="text"  class="input-group-text col-12" id="asunto">
+                
+                  <label class="form-label">Nacimiento:</label>
+                  <input type="date" onchange="calcularEdad()" id="nacimiento" class="input-group col-12 form-control">
+                  <div class="col-12">
+                    <label class="form-label">Edad:</label>
+                    <label id="edad">Por favor selecciona una fecha de nacimiento</label>
+                  </div>
+        
+                  <label class="form-label">Rango de interes:</label>
+                  <input type="range" max="10" min="0" id="interes" onchange="numInteres()" class="col-12 form-range">
+                  <label class="col-12 text-center" id="numInteres">5</label>
+        
+                  <label class="form-label">Genero:</label>
+                  <div class="btn-group btn-group-toggle col-12 m-0" data-toggle="buttons">
+                    <label class="btn">
+                      <input type="radio" class="m-1" checked name="options" id="masculino">Masculino
+                    </label>
+                    <label class="btn">
+                      <input type="radio" class="m-1" name="options" id="femenino">Femenino
+                    </label>
+                    <label class="btn">
+                      <input type="radio" class="m-1" name="options">Otro
+                    </label>
+                  </div>
+        
+                  <label class="form-label">Como nos conociste?</label>
+                  <div class="btn-group-toggle col-12 row m-0" data-toggle="buttons">
+                    <label class="btn col-4">
+                      <input type="checkbox" class="m-1" id="conocidos">Conocidos
+                    </label>
+                    <label class="btn col-4">
+                      <input type="checkbox" class="m-1" id="redes">Redes
+                    </label>
+                    <label class="btn col-4">
+                      <input type="checkbox" class="m-1" id="otro">Otro
+                    </label>
+                  </div>
+        
+                  <label class="form-label">Mensaje: </label>
+                  <textarea name="msg" class="input-group-text col-12" id="msg"></textarea><br>
+                
+                  <button onclick="enviarCorreo()" class="btn btn-primary col-12"><a class="text-white text-decoration-none">Enviar</a></button>
+                </div>
+
+
+      </div>
+    </main>
+
+    <footer class="col-12 text-center justify-content-center">
+      <div class="col-12 text-center justify-content-center row" id="footerr">
+        <a class="col-3" href="galeria.html">Productos</a>
+        <a class="col-3" href="historia.html">Historia</a>
+        <a class="col-3" href="acerca.html">Acerca</a>
+      </div>
+      <div class="col-12 row text-center justify-content-center" id="footerr">
+        <a class="col-3 text-white" href = "https://www.instagram.com/sublimables_sol/">Siguenos en<img class="m-2" src="img/instagram.png" width="25px;" alt=""></a>
+        <a class="col-3 text-white" href = "https://api.whatsapp.com/send?phone=83372653&text=Me%20interesa%20saber%20mas%20sobre%20los%20productos">Escribenos al<img src="img/whatsapp.png" width="25px" class="m-2" alt=""> </a>
+      </div>
+    </footer>
+
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

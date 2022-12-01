@@ -1,0 +1,274 @@
+body {
+  background: rgb(230, 240, 255);
+}
+
+#map, #mapa{
+  height: 450px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#video{
+  border-radius: 20px;
+}
+
+#btnEnviar{
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 10px;
+}
+
+#form{
+  border-radius: 20px;
+}
+
+buttoN {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 1;
+  color: white;
+  font-size: 20px;
+}
+
+
+@media (width >= 600px) {
+  buttoN {
+    font-size: 16px;
+  }
+}
+
+:is(.navBar, .burger, .dropdowns) {
+  position: fixed;
+  top: 0;
+}
+
+.navBar {
+  z-index: 1;
+  left: 0;
+  display: flex;
+  align-items: stretch;
+  height: 72px;
+  background: dodgerblue;
+  color: white;
+}
+
+.burger {
+  z-index: 3;
+  right: 0;
+  display: grid;
+  position: absolute;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.open .burger {
+  background-image: url("../img/close.svg");
+}
+
+@media (width >= 600px) {
+  .burger {
+    display: none;
+  }
+}
+
+.buttoN {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  padding: 0 24px;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.buttoN > img {
+  display: none;
+}
+
+@media (width >= 600px) {
+  .buttoN {
+    padding: 0 10px 0 24px;
+  }
+
+  .buttoN > img {
+    display: block;
+  }
+}
+
+@media (width >= 600px) {
+  .dropdown:hover .buttoN {
+    opacity: 1;
+  }
+}
+
+.dropdowns {
+  left: -9999px;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: dodgerblue;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+}
+
+@media (width < 600px) {
+  body.open .dropdowns {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    display: none;
+  }
+}
+
+@media (width >= 600px) {
+  .dropdowns {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.dropDown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropDown-menu {
+  display: grid;
+  margin-bottom: 28px;
+}
+
+@media (width >= 600px) {
+  .dropDown {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .dropDown-menu {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 180px;
+    padding: 6px 24px 10px;
+    margin-bottom: 0;
+    place-items: start;
+    background: dodgerblue;
+    opacity: 0;
+    visibility: hidden;
+    translate: 0 24px;
+    transition: 0.3s;
+  }
+
+  .dropDown:hover .dropDown-menu {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 0;
+  }
+}
+
+.dropDown-menu > buttoN {
+  color: white;
+  opacity: 1;
+  height: 40px;
+}
+
+@media (width >= 600px) {
+  .dropDown-menu > buttoN {
+    opacity: 0.6;
+  }
+
+  .dropDown:hover .buttoN {
+    opacity: 1;
+  }
+}
+
+.dropDown-menu > buttoN:hover {
+  opacity: 1;
+}
+
+footer{
+  background-color: dodgerblue;
+}
+
+footer a, footer span{
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+footer a:hover{
+  color: white;
+}
+
+#footerr{
+  padding: 10px;
+}
+
+h2{
+  color: white; 
+  background-color: dodgerblue; 
+  border-radius: 5px;
+}
+
+h3{
+  color: white; 
+  background-color: dodgerblue; 
+  border-radius: 10px;
+}
+
+#logo{
+  border-radius: 50px;
+}
+
+#divBlue{
+  background-color: dodgerblue;
+}
+
+#divWhite{
+  background-color: white;
+}
+
+#divBlue h1{
+  color: white;
+}
+
+#divWhite h1{
+  color: dodgerblue;
+}
+
+#imgCarrousel{
+  aspect-ratio: 16/8;
+}
+
+p{
+  font-size: 18px;
+}
+
+#formCorreo{
+  border-radius: 10px;
+}
