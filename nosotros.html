@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sublimables Sol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar position-relative">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <img src="img/logo.jpg" alt="logo" class="m-1" id="logo">
+        <button class="buttoN" onclick="window.location.href='index.html'">Sublimables Sol</button>
+        <div class="dropdowns">
+          <div class="dropDown">
+            <button onclick="window.location.href='galeria.html'" class="buttoN">
+              Productos
+              <img src="img/chevron.svg"/>
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='tazas.html'">Tazas</button>
+              <button onclick="window.location.href='botellas.html'">Botellas</button>
+              <button onclick="window.location.href='carnets.html'">Carnets</button>
+              <button onclick="window.location.href='camisetas.html'">Camisetas</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button class="buttoN" onclick="window.location.href='historia.html'">
+              Historia
+              <img src="img/chevron.svg" />
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='nosotros.html'">¿Quienes somos?</button>
+              <button onclick="window.location.href='ubicacion.html'">Ubicacion</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button onclick="window.location.href='acerca.html'" class="buttoN">
+              Acerca
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <div class = "mt-3 container col-6">
+          <img src="img/logo.jpg" class="container" id = "logo" alt="LogoSublimablesSol">
+        </div>
+
+        <h3 class="text-center mt-4 w-50 container">Nosotros</h3>
+        
+        <div class = "mt-3 container col-8">
+          <p class="text-center">Somos una pequeña empresa, administrada por una familia, estamos dedicados a la sublimacion y a la creacion de diseños personalizados para aplicar la sublimacion.</p>
+        </div>
+        
+        <h3 class="text-center mt-4 w-50 container">¿Que es la Sublimacion?</h3>
+        <video src="img/que_es_subli.mp4" id="video" controls type="video/mp4" class="col-12"></video>
+        <span class="opacity-50">Fuente: RIGBASU / Youtube</span>
+
+        <h3 class="text-center mt-4 w-50 container">Sublimacion vs Serigrafia</h3>
+        <audio class="col-12" src="img/diferencia.mp3" type="audio/mpeg" controls></audio>
+        <span class="opacity-50">Fuente: Academia Moda Online / Youtube</span>
+
+        <div>
+          <h3 class="text-center mt-4 w-50 container">Cuentanos tu experiencia</h3>
+          <div class="mb-3">
+            <textarea class="form-control" name="" id="txtExperiencia" rows="4"></textarea>
+            <a id="btnEnviar" class="col-12 mt-2 btn" onclick="opinion()" role="button">Enviar</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </main>
+
+    <footer class="col-12 text-center justify-content-center">
+      <div class="col-12 text-center justify-content-center row" id="footerr">
+        <a class="col-3" href="galeria.html">Productos</a>
+        <a class="col-3" href="historia.html">Historia</a>
+        <a class="col-3" href="acerca.html">Acerca</a>
+      </div>
+      <div class="col-12 row text-center justify-content-center" id="footerr">
+        <a class="col-3 text-white" href = "https://www.instagram.com/sublimables_sol/">Siguenos en<img class="m-2" src="img/instagram.png" width="25px;" alt=""></a>
+        <a class="col-3 text-white" href = "https://api.whatsapp.com/send?phone=83372653&text=Me%20interesa%20saber%20mas%20sobre%20los%20productos">Escribenos al<img src="img/whatsapp.png" width="25px" class="m-2" alt=""> </a>
+      </div>
+    </footer>
+
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/js.js"></script>
+  </body>
+</html>

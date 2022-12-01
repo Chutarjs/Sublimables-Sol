@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sublimables Sol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar position-relative">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <img src="img/logo.jpg" alt="logo" class="m-1" id="logo">
+        <button class="buttoN" onclick="window.location.href='index.html'">Sublimables Sol</button>
+        <div class="dropdowns">
+          <div class="dropDown">
+            <button onclick="window.location.href='galeria.html'" class="buttoN">
+              Productos
+              <img src="img/chevron.svg"/>
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='tazas.html'">Tazas</button>
+              <button onclick="window.location.href='botellas.html'">Botellas</button>
+              <button onclick="window.location.href='carnets.html'">Carnets</button>
+              <button onclick="window.location.href='camisetas.html'">Camisetas</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button class="buttoN" onclick="window.location.href='historia.html'">
+              Historia
+              <img src="img/chevron.svg" />
+            </button>
+            <div class="dropDown-menu">
+              <button onclick="window.location.href='nosotros.html'">¿Quienes somos?</button>
+              <button onclick="window.location.href='ubicacion.html'">Ubicacion</button>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button onclick="window.location.href='acerca.html'" class="buttoN">
+              Acerca
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- Carrousel Inicio -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/tazas (1).jpg" id="imgCarrousel" class="d-block w-100">
+            <div class="carousel-caption text-center">
+              <p class="mb-2">Bienvenidos!</p>
+              <h1 class="mb-3">Sublimables Sol</h1>
+            </div>
+          </div>
+            
+          <div class="carousel-item">
+            <img src="img/tazas (2).jpg" id="imgCarrousel" class="d-block col-12">
+            <div class="carousel-caption text-center">
+              <p class="mb-2">Sublimables Sol</p>
+              <h1 class="mb-3">Todo en Sublimacion!</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carrousel Final -->
+      
+      <div class="container">
+        <h3 class="text-center mt-5 mb-3 w-75 container">Productos</h3>
+        <p class="text-black text-center col-7 container">En Sublimables Sol puedes encontrar productos de todo tipo, algunos de estos son:</p>
+          <div class="col-md-9 col-9 mt-3 container">
+            <div class="rounded overflow-hidden">
+              <div class="row">
+                <div class="fadeIn col-md-6 m-0 p-0">
+                  
+                  <div class="text-center py-5 px-4" id="divBlue">
+                    <img class="img-fluid mb-4" src="img/taza.png" alt="" />
+                    <h1 class="display-6">
+                      Tazas
+                    </h1>
+                  </div>
+                </div>
+      
+                <div class="fadeIn col-md-6 m-0 p-0">
+                  <div class="text-center py-5 px-4" id="divWhite">
+                    <img class="img-fluid mb-4" src="img/botella.png" alt="" />
+                      <h1 class="display-6">Botellas</h1>
+                  </div>
+                </div>
+      
+                <div class="fadeIn col-md-6 m-0 p-0">
+                  <div class="text-center py-5 px-4" id="divWhite">
+                    <img class="img-fluid mb-4" src="img/carnet.png" alt="" />
+                    <h1 class="display-6">
+                      Carnets
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="fadeIn col-md-6 m-0 p-0">
+                  <div class="text-center py-5 px-4" id="divBlue">
+                    <img class="img-fluid mb-4" src="img/camiseta.png" alt="" />
+                    <h1 class="display-6">Camisetas</h1>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="container">
+        <h3 class="text-center mt-5 w-75 container">Nosotros</h3>
+        <p class="text-black text-center col-md-6 col-7 container">Somos una empresa dedicada a la sublimacion de todo tipo de objetos como: tazas, ropa, botellas, carnets, entre otros.</p>
+        <p class="text-black text-center col-md-6 col-7 container">Gracias por preferirnos, tus compras nos ayuda a crecer y mejorar cada dia.</p>
+        <p class="text-black text-center col-md-6 col-7 container">Estamos ubicados en la zona de Grecia, Alajuela.</p>
+        <h3 class="text-center mt-5 w-50 container">Nuestra Ubicacion</h3>
+        <div class="mb-3" id="mapa"></div>
+      </div>
+    </main>
+
+    <footer class="col-12 row text-center justify-content-center">
+      <div class="col-12 text-center justify-content-center row" id="footerr">
+        <a class="col-3" href="galeria.html">Productos</a>
+        <a class="col-3" href="historia.html">Historia</a>
+        <a class="col-3" href="acerca.html">Acerca</a>
+      </div>
+      <div class="col-12 row text-center justify-content-center" id="footerr">
+        <a class="col-3 text-white" href = "https://www.instagram.com/sublimables_sol/">Siguenos en<img class="m-2" src="img/instagram.png" width="25px;" alt=""></a>
+        <a class="col-3 text-white" href = "https://api.whatsapp.com/send?phone=83372653&text=Me%20interesa%20saber%20mas%20sobre%20los%20productos">Escribenos al<img src="img/whatsapp.png" width="25px" class="m-2" alt=""> </a>
+      </div>
+    </footer>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQkY5DqOZIPFovEIejwYngyYbOwEwk6KQ&callback=initMap&v=weekly"
+    defer
+    ></script>
+    <script src="js/maps.js"></script>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
